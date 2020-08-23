@@ -1,0 +1,43 @@
+body
+{
+  background-image: linear-gradient(to bottom right, rgb(74, 74, 230)  ,rgb(255, 51, 153),rgb(255, 117, 24));
+  margin: 0;
+}
+.table
+{
+  background-color : white;
+  height: 100%;
+  
+}
+td  
+{
+  padding: 30px;
+}
+
+.Header
+{
+  height: 350px;
+ 
+}
+.Header >h3
+{
+  margin-top: 80px;
+  color: white;
+  font-size: 70px;
+  font-weight: bold;
+}
+.Navbar
+{
+  height: 90px;
+  width:121.6%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+  position: relative;
+  left: -120px;
+}
+.Nav
+{
+  display: flex;
+}
