@@ -1,0 +1,41 @@
+.header__input{
+    display: flex;
+    align-content: center;
+    margin-top: 30px;
+}
+.input{
+    padding-left: 257px;
+}
+@media (max-width: 1199px){
+    .header__input{
+        display: flex;
+        flex-direction: column;
+        padding-right: 250px;
+    }
+    .input{
+        padding-left: 0px;
+    }
+    .row__header{
+        padding-right: 150px;
+    }
+    .Header{
+        height: 200px;
+        margin-bottom: 20px;
+        margin-top: 0px;
+        padding-right: 100px;
+    }
+    .date{
+        margin-left: 100px;
+       
+    }
+    .Header>h3{
+        margin-top: 0px;
+        
+        font-size: 40px;
+        width: 250px;
+        
+    }
+    .row__header{
+        padding-left: 0px;
+    }
+}

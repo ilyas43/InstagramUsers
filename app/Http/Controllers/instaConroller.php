@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use \App\utilisateur;
 class instaConroller extends Controller
 {
+   
     public function index()
     {
         return view('Categories');

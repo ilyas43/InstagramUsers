@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 //pour toures les categories
-Route::get('/','instaConroller@index');
+Route::get('/','instaConroller@index')->middleware("auth");
 Route::post('/create','instaConroller@create');
 Route::get('/liste','instaConroller@Liste');
 Route::get('/singer_liste','instaConroller@singers');
@@ -27,7 +27,10 @@ Route::get('/profile/user/{name}','instaConroller@Profile');
 
 Route::get('/profile', function () {
     return view('Profile');
-});
-Route::get('/sport','instaConroller@Sport');
+})->middleware("auth");
+Route::get('/sport','instaConroller@Sport')->middleware("auth");
 //pour singers
-Route::get('/singer','instaConroller@Singer');
+Route::get('/singer','instaConroller@Singer')->middleware("auth");
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

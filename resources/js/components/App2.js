@@ -3,12 +3,16 @@ import ReactDOM from 'react-dom';
 import Liste from './Liste';
 import Navbar from './Navbar';
 
+
 class App2 extends React.Component {
   render(){
     return(
       <div className="App">
-        <Navbar />
-        <Liste influenceur={['cristiano','arianagrande','theroock2','kyliejenner','selenagomez','kimkardashian','leomessi','beyonce','justinbieber']} />
+        {/*<Navbar /> */}
+        {/*<ThemeProvider>*/}
+          <Liste influenceur={['cristiano','arianagrande','theroock2','kyliejenner','selenagomez','kimkardashian','leomessi','beyonce','justinbieber']} />
+        {/*</ThemeProvider>*/}
+         
       </div>
     );
   }

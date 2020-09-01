@@ -2,7 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import Alert from './Alert';
 import Loading from './Loading';
-
+import ReactDOM from 'react-dom';
 
 class Modal extends React.Component {
     constructor(){
@@ -112,4 +112,7 @@ class Modal extends React.Component {
   );
   }
 }
-export default Modal;
+//export default Modal;
+if (document.getElementById('Modal')) {   
+    ReactDOM.render(<Modal />, document.getElementById('Modal'));
+}
